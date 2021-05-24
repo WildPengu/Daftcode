@@ -90,14 +90,6 @@ const VideoContainer = styled.iframe`
   }
 `;
 
-const Play = styled.img`
-  width: 78px;
-
-  @media (min-width: 1440px) {
-    width: 130px;
-  }  
-`;
-
 const Community = () => {
   return (
     <section id="courses">
