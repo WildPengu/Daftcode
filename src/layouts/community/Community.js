@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Title } from "../../components/Title";
 import { Description } from "../../components/Description";
-import CommunityImage from "../../assets/CommunityImage.png";
-import PlayButton from "../../assets/Play.png";
 
 const CommunityContainer = styled.div`
   background: #FABD20;
@@ -50,20 +48,16 @@ const CommunityDescription = styled(Description)`
   }
 `;
 
-const VideoContainer = styled.div`
+const VideoContainer = styled.iframe`
+  border: none;
+  border-radius: 8px;
   height: 160px;
   width: 327px;
   margin: 0 auto;
   left: 0;
   right: 0;
-  background-image: url(${CommunityImage});
   position: absolute;
   bottom: -71px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 
   @media (max-width: 374px) {
     height: 110px;
@@ -110,8 +104,13 @@ const Community = () => {
       <CommunityContainer>
         <CommunityTitle>What our community is saying?</CommunityTitle>
         <CommunityDescription>A mission-driven company that invest in and builds healthier living</CommunityDescription>
-        <VideoContainer>
-          <Play src={PlayButton} alt="Play"/>
+        <VideoContainer 
+          src="https://www.youtube.com/embed/hT_nvWreIhg" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+        >
         </VideoContainer>
       </CommunityContainer>
     </section>
