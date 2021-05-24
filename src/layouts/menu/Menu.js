@@ -17,22 +17,25 @@ const MenuLogo = styled(LogoWithTitle)`
 `;
 
 const MenuCreamSection = styled(CreamSection)`
+  padding-bottom: 0;
+`;
+
+const Navigation = styled.nav`
   position: sticky;
   top: 0;
-  padding-bottom: 0;
   z-index: 9;
 `;
 
 const Menu = () => {
   return (
-    <nav>
+    <Navigation>
       <MenuCreamSection>
         <MenuContainer>
           <MenuLogo />
           <MenuContent />
         </MenuContainer>
       </MenuCreamSection>
-    </nav>
+    </Navigation>
   )
 }
 

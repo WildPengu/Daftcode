@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CreamSection } from "../../components/CreamSection";
 import { HeroImage } from "./components/HeroImage";
 import { Title } from "../../components/Title";
-import { LogoIcon } from "../../components/Logo";
+import { LogoIcon } from "./components/Logo";
 import Description from "../../components/Description";
 import { Button } from "../../components/Button";
 import NumbersSection from './components/NumbersSection';
